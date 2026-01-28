@@ -1,5 +1,5 @@
 {
-  "name": "react-test-app",
+  "name": "nextjs-better-auth-starter-kit",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,33 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "better-auth": "^1.4.17",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
     "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "postgres": "^3.4.8",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.71.1",
+    "server-only": "^0.0.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.10",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "drizzle-kit": "^0.31.8",
+    "eslint": "^9.39.2",
     "eslint-config-next": "16.1.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "tailwindcss": "^4.1.18",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@esbuild-kit/core-utils": "npm:tsx@latest",
+      "@esbuild-kit/esm-loader": "npm:tsx@latest"
+    }
   }
 }
